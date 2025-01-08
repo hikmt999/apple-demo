@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+
+}
+.boredom a {
+    position: relative;
+    padding-bottom: 2px;
+    transition: all 0.3s ease;
+}
+.boredom a:hover::after{
+    content: ''; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #007bff; 
+}
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: auto;
+    gap: 30px;
+    padding-top: 10px !important;
+}
+.cards::-webkit-scrollbar{
+    display: none;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card-top{
+    img{
+        width: 24px;
+        height: 44px;
+    }
+}
+.titanium{
+    background: url('img/maini1.jpeg') center / contain no-repeat;
+    height: 40px;width: 100%;
+}
+.titanmob{
+    background: url('img/maini2.jpeg') center / contain no-repeat;
+    width: 360px;
+    height: 392px;
+}
+.titandes{
+    background: url('img/maini4.png') center / contain no-repeat;
+    min-width: 800px;
+    height: 334px;
+    background-size: 100%;
+}
+.iphonekamera{
+    background: url('img/maini21.jpeg') center / contain no-repeat;
+    height: 40vw;
+    width: 100% !important;
+}
+.iphone3x{
+    background: url('img/maini22.jpeg') center / contain no-repeat;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.mobile-background {
+    display: none;
+    width: 352px;
+    height: 333px;
+    margin: auto;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.desktop-background {
+    display: none;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    position: relative;
+}
+
+.content {
+    margin-bottom: 20px;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: left;
+}
+
+.content h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.content button {
+
+    color: #0071e3;
+    border: none;
+    padding: 4px 15px;
+    cursor: pointer;
+    font-size: .9rem;
+    border-radius: 25px;
+    i{
+        display: block;
+        display: inline-block;
+        font-size: .6rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .mobile-background {
+        display: block;
+        background-image: url('img/maini23.jpeg');
+        border-radius: 10px;
+        margin: auto;
+        background-position: center;
+    }
+
+    .desktop-background {
+        display: none;
+    }
+
+    .content {
+        color: black;
+        position: static;
+        margin-bottom: 20px;
+        text-align: center;
+        transform: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .mobile-background {
+        display: none;
+    }
+
+    .desktop-background {
+        display: block;
+        background-image: url('img/maini23.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: auto!important;
+    }
+
+    .content {
+        position: absolute;
+        color: white;
+        font-size: 2rem !important;
+        margin: 0;
+        left: 200px;
+        top: 50%;
+        transform: translateY(-50%);
+        h2{
+            font-weight: bold;
+            font-family: sans-serif;
+            letter-spacing: 2px;
+        }
+        button{
+            color: #000;
+            i{
+                display: none;
+            }
+        }
+    }
+}
+.new{
+    background: url('img/new1.jpg') bottom / contain no-repeat;
+}
+.new2{
+    background: url('img/new2.jpeg') center / contain no-repeat;
+    width: 356px !important;
+    height: 146px !important;
+}
+.new3{
+    background: url('img/card10.jpeg') center / contain no-repeat;
+    width: 334.4px;
+    height: 218.8px;
+}
+.new4{
+    background: url('img/card11.jpeg') left / cover no-repeat;
+
+}
+.new5{
+    background: url('img/card111.jpeg') center / contain no-repeat;
+}
+.new6{
+    background: url('img/card101.jpg') center / contain no-repeat;
+}
+.new7{
+    background: url('img/card102.jpg') center / contain no-repeat;
+}
+.ip1{
+    background: url('img/ip1.jpg') center / cover no-repeat;
+}
+.ip2{
+    background: url('img/ip2.jpeg') center / cover no-repeat;
+}
+.ip3{
+    background: url('img/ip3.jpg') center / cover no-repeat;
+}
+.ip4{
+    background: url('img/ip3.jpeg') center / contain no-repeat;
+}
+.ip5{
+    background: url('img/ip4.jpg') center / contain no-repeat;
+}
+.ip6{
+    background: url('img/i6.png') center / contain no-repeat;
+}
+.ip7{
+    background: url('img/i7.jpg') center / contain no-repeat;
+}
+.ip8{
+    background: url('img/i10.jpg') center / cover no-repeat;
+}
+.ip9{
+    background: url('img/i11.png') center / cover no-repeat;
+}
+.ip88{
+    background: url('img/i12.jpeg')  center -100px / cover no-repeat;
+}
+.ip10{
+    background: url('img/i13.jpg') center / cover no-repeat;
+}
+.ip11{
+    background: url('img/sonimg.jpg') center / contain no-repeat;
+}
+.card102{
+    background: url('img/card102.jpeg') center / contain no-repeat;
+}
+.buyhover{
+    transition: .4s;
+
+}
+.buyhover:hover{
+    box-shadow: 2px 3px 3px #92c7ff;
+    transform: translateY(-1px);
+}
+.ahover {
+    position: relative; /* Pseudo-elementin yerleşimi için */
+    display: inline-block; /* Boyut kontrolü için */
+
+    font-weight: normal; /* Varsayılan yazı ağırlığı */
+    text-decoration: none; /* Alt çizgiyi kaldır */
+    transition: all 1s ease; /* Yumuşak geçiş efekti */
+}
+
+.ahover:after {
+    content: ""; /* Pseudo-element içeriği boş */
+    position: absolute; /* Konumlandırma */
+    bottom: -4px; /* Yazının hemen altına yerleştir */
+    left: 0; /* Sol baştan başla */
+    width: 0%; /* Başlangıçta çizgi görünmez */
+    height: 3px; /* Çizgi kalınlığı */
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); /* Gökkuşağı efekti */
+    transition: width 1s ease; /* Yumuşak genişleme efekti */
+    
+}
+
+.ahover:hover:after {
+    width: 100%; /* Hover sırasında çizgi tam genişlikte */
+}
+

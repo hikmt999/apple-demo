@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS exam</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/output.css">
+</head>
+
+<body>
+    <header>
+        <nav1
+            class='flex justify-evenly shadow-md py-4 sm:px-2 bg-[#F2F2F2] font-[sans-serif] min-h-[70px] tracking-wide relative z-50'>
+            <div class='flex justify-between px-3.5  flex-wrap items-center gap-5 w-90  max-md:w-full m-auto'>
+                <a href="javascript:void(0)" class="max-sm:hidden"><i class="fa-brands text-[1.42rem] fa-apple"></i></a>
+                <a href="javascript:void(0)" class="hidden max-sm:block">
+                    <i class="fa-brands fa-apple text-[1.2rem]"></i>
+                </a>
+
+                <div id="collapseMenu"
+                    class='max-lg:hidden lg:!block max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50'>
+                    <button id="toggleClose"
+                        class='lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white w-4 h-9 flex items-center justify-between border'>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 fill-black"
+                            viewBox="0 0 320.591 320.591">
+                            <path
+                                d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+                                data-original="#000000"></path>
+                            <path
+                                d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+                                data-original="#000000"></path>
+                        </svg>
+                    </button>
+
+                    <ul
+                        class='lg:flex gap-x-2 boredom  max-lg:fixed max-lg:bg-[#F2F2F2] max-lg:w-1/2 max-lg:min-w-[100%] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50'>
+                        <li class='mb-6 hidden max-lg:block'>
+                            <a href="javascript:void(0)">
+                            </a>
+                        </li>
+                        <li class='max-lg:border-b  border-gray-300 max-lg:py-3 px-3'>
+                            <a href='javascript:void(0)'
+                                class='hover:text-[#007bff]  block font-semibold text-[15px]'>Store</a>
+                        </li>
+                        <li class='max-lg:border-b border-gray-300 max-lg:py-3 px-3'><a href='javascript:void(0)'
+                                class='hover:text-[#007bff]  text-gray-500 block font-semibold text-[15px]'>Mac</a>
+                        </li>
+                        <li class='max-lg:border-b border-gray-300 max-lg:py-3 px-3'><a href='javascript:void(0)'
+                                class='hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]'>Ipad</a>
+                        </li>
+                        <li class='max-lg:border-b border-gray-300 max-lg:py-3 px-3'><a href='javascript:void(0)'
+                                class='hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]'>Iphone</a>
+                        </li>
+                        <li class='max-lg:border-b border-gray-300 max-lg:py-3 px-3'><a href='javascript:void(0)'
+                                class='hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]'>Watch</a>
+                        </li>
+                        <li class='max-lg:border-b border-gray-300 max-lg:py-3 px-3'><a href='javascript:void(0)'
+                                class='hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]'>Vision</a>
+                        </li>
+                        <li class='max-lg:border-b border-gray-300 max-lg:py-3 px-3'><a href='javascript:void(0)'
+                                class='hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]'>Contact</a>
+                        </li>
+                        <li class='max-lg:border-b border-gray-300 max-lg:py-3 px-3'><a href='javascript:void(0)'
+                                class='hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]'>AirPods</a>
+                        </li>
+                        <li class='max-lg:border-b border-gray-300 max-lg:py-3 px-3'><a href='javascript:void(0)'
+                                class='hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]'>Tv & Home</a>
+                        </li>
+                        <li class='max-lg:border-b border-gray-300 max-lg:py-3 px-3'><a href='javascript:void(0)'
+                                class='hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]'>Entertainment</a>
+                        </li>
+                        <li class='max-lg:border-b border-gray-300 max-lg:py-3 px-3'><a href='javascript:void(0)'
+                                class='hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]'>Accessories</a>
+                        </li>
+                        <li class='max-lg:border-b border-gray-300 max-lg:py-3 px-3'><a href='javascript:void(0)'
+                                class='hover:text-[#007bff] text-gray-500 block font-semibold text-[15px]'>Support</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class='flex  space-x-2'>
+                    <button>
+                        <a class="fa-solid fa-magnifying-glass"></a>
+                    </button>
+                    <button>
+                        <a class="fa-solid fa-store"></a>
+                    </button>
+                    <button id="toggleOpen" class='lg:hidden'>
+                        <svg class="w-7 h-7" fill="#000" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav1>
+        <div id="nav2" class="h-[140px] max-lg:h-[140px]">
+            <div class="cards w-[80%] m-auto">
+                <div class="card  pt-[15px]">
+                    <div class="card-top"><img src="img/navi1.svg" alt=""></div>
+                    <div class="card-bottom">
+                        <p>iPhone 15 Pro</p>
+                        <p class="text-[#FC7C7C] text-[.7rem] text-center">New</p>
+                    </div>
+                </div>
+                <div class="card pt-[15px]">
+                    <div class="card-top"><img src="img/navi2.svg"></div>
+                    <div class="card-bottom">
+                        <p>iPhone 15</p>
+                        <p class="text-[#FC7C7C] text-[.7rem]  ">New</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-top"><img src="img/navi3.svg"></div>
+                    <div class="card-bottom">
+                        <p>iPhone 14</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-top"><img src="img/navi4.svg"></div>
+                    <div class="card-bottom">
+                        <p>iPhone 13</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-top"><img src="img/navi5.svg"></div>
+                    <div class="card-bottom">
+                        <p>iPhone SE</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-top"><img src="img/navi6.svg"></div>
+                    <div class="card-bottom">
+                        <p>Compare</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-top"><img src="img/navi7.svg"></div>
+                    <div class="card-bottom">
+                        <p>AirPods</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-top"><img src="img/navi8.svg"></div>
+                    <div class="card-bottom">
+                        <p>AirTag</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-top"><img src="img/navi9.svg" alt=""></div>
+                    <div class="card-bottom">
+                        <p>Accessories</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-top"><img src="img/navi10.svg" alt=""></div>
+                    <div class="card-bottom">
+                        <p>Apple Card</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-top"><img src="img/navi11.svg" alt=""></div>
+                    <div class="card-bottom">
+                        <p>iOS 17</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-top"><img src="img/navi12.svg" alt=""></div>
+                    <div class="card-bottom">
+                        <a class="ahover">Shop iPhone</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="h-[100px] py-3 m-auto bg-[#F2F2F2] max-sm:h-[180px] max-sm:py-3">
+            <div class="w-[94%]">
+                <p class="text-center text-[1.3rem]">Get $180–$620 in credit toward iPhone 15 or iPhone 15
+                    Pro when you trade in iPhone 11or higher.</p>
+                <p class="text-[#0071e3] font-semibold text-center text-[1.12em] mt-[4px]"><a href=""
+                        class="ahover">Shop Iphone ></a>
+                </p>
+            </div>
+        </div>
+        <div class="bg-[#000] py-8 flex h-[700px] flex-col gap-3 justify-center items-center">
+            <span class="text-[#bf4800] text-[.8rem]">New</span>
+            <h6 class="text-[#8b887e] text-[1.3rem]">Iphone 15 pro</h6>
+            <div class="titanium"></div>
+            <p class="text-[#fff]">From $999 or $41.62/mo. for 24 mo.</p>
+            <a href=""
+                class="bg-[#007bff] rounded-[30px] w-[80px] text-center pt-[6px] mt-[8px] h-[40px] text-[#fff] buyhover">Buy</a>
+            <p class="text-[#0071e3] font-semibold text-center text-[1.12em] my-[8px] ahover"><a href="">Learn More
+                    ></a></p>
+            <div class="titanmob hidden max-md:block"></div>
+            <div class="titandes block max-md:hidden"></div>
+        </div>
+        <div class=" justify-center items-center py-5 flex flex-col gap-5">
+            <span class="text-[#bf4800] text-[.8rem]">New</span>
+            <h6 class=" text-[#000] text-[1.3rem]">Iphone 15 pro</h6>
+            <h2 class="text-[2.97rem] font-sans max-md:text-[2.24rem]">Newphoria</h2>
+            <p>From $999 or $41.62/mo. for 24 mo.</p>
+            <a href=""
+                class="bg-[#007bff] rounded-[30px] w-[80px] text-center  pt-[6px]  h-[40px] buyhover text-[#fff]">Buy</a>
+            <p class="text-[#0071e3] font-semibold text-center text-[1.12em] my-[8px] ahover"><a href="">Learn More
+                    ></a></p>
+            <div class="iphonekamera"></div>
+        </div>
+        <div class="flex justify-evenly bg-[#FBFBFB]  flex-row max-md:flex-col">
+            <div class="flex items-center justify-center flex-col gap-1">
+                <h6 class="text-[1.2rem]">Iphone</h6>
+                <h2 class="text-[#1e3791] text-[3rem] max-md:text-[2rem] font-semibold">Love the power</h2>
+                <h2 class="text-[#1e3791] text-[3rem] max-md:text-[2rem] font-semibold">Love the price</h2>
+                <p class=" text-[1.2rem] py-5">From $999 or $41.62/mo. for 24 mo.</p>
+                <a href=""
+                    class="bg-[#007bff] rounded-[30px] w-[80px] text-center  pt-[6px]  h-[40px] text-[#fff] buyhover">Buy</a>
+                <p class="text-[#0071e3] font-semibold text-center text-[1.12em] my-[8px] ahover"><a href="">Learn More
+                        ></a>
+                </p>
+            </div>
+            <div class="iphone3x w-[530px] my-[40px] h-[700px] max-md:w-[352px] max-md:h-[333px] "></div>
+        </div>
+        <div class="container m-auto">
+            <div class="desktop-background m-auto h-[90vh] bg-center w-[96%]"></div>
+            <div class="content">
+                <h2>A Guided Tour of<br>iPhone 15 & <br> iPhone 15 Pro</h2>
+                <button class="bg-[#D5D5D5]  hover:bg-[#cacaca]">Watch the film <i
+                        class="fa-solid fa-play text-[#0071e3] "></i></button>
+            </div>
+            <div class="mobile-background"></div>
+        </div>
+        <div>
+            <h2 class="text-[3rem] mt-[90px] font-bold  text-center w-[90%] m-auto max-md:text-[2rem]">Which iPhone is
+                right for you?
+            </h2>
+            <div id="cards4" class="flex  justify-center items-center">
+                <div id="card12" class="flex flex-wrap  justify-center  items-center mt-[100px]">
+                    <div id="card1" class="flex justify-center items-center flex-col gap-1">
+                        <img src="img/card11.jpg" alt="" class="w-[231px] max-md:w-[156.35px] h-[225px] object-contain">
+                        <img src="img/card12.jpeg" alt="" class="my-[15px]">
+                        <p class="text-[#FC7C7C] text-[.7rem] text-center">New</p>
+                        <p class="font-bold">Iphone 15 Pro</p>
+                        <p>The ultimate Iphone</p>
+                        <p class="py-[8px]">From $999</p>
+                        <a href=""
+                            class="bg-[#0071e3] text-[#fff] block w-[75px] h-[37px] text-center pt-[3px] rounded-2xl buyhover">Buy</a>
+                        <p class="text-[#0071e3] font-semibold text-center text-[1.12em] my-[8px] ahover"><a
+                                href="">Learn More
+                                ></a></p>
+                        <hr class="w-[251.1px] h-[1.6px] bg-[#999] max-md:w-[105px] my-[35px]">
+                        <div class="flex justify-center items-center flex-col gap-12">
+                            <div class="flex justify-center items-center flex-col text-[11.2px]">
+                                <p>6.7″ or 6.1″</p>
+                                <p>Super Retina XDR display</p>
+                                <p>ProMotion technology</p>
+                                <p>Always-On display</p>
+                            </div>
+                            <div class="flex justify-center items-center flex-col text-[11.2px]">
+                                <img src="img/card13.jpeg" alt="" class="mb-[15px] w-[40px] h-[40px] object-contain">
+                                <p>Titanium with textured matte</p>
+                                <p>glass back</p>
+                                <p>Action button</p>
+                            </div>
+                            <div class="flex justify-center items-center flex-col text-[11.2px]">
+                                <img src="img/card14.jpeg" alt="" class="mb-[15px] w-[40px] h-[40px] object-contain">
+                                <p>Dynamic Island</p>
+                                <p>A magical way to interact</p>
+                                <p>with iPhone</p>
+                            </div>
+                            <div class="flex justify-center items-center flex-col text-[11.2px]">
+                                <img src="img/card15.jpeg" alt="" class="mb-[15px] w-[40px] h-[40px] object-contain">
+                                <p>Pro camera system</p>
+                                <p>48MP Main</p>
+                                <p>Ultra Wide</p>
+                                <p>Super-high-resolution photos</p>
+                                <p>(24MP and 48MP)</p>
+                                <p>Next-generation portraits</p>
+                                <p>with Focus and Depth</p>
+                                <p>Control</p>
+                            </div>
+                            <div class="flex justify-center items-center flex-col text-[11.2px]">
+                                <p>Up to</p>
+                                <p class=" font-bold text-[1.3rem] max-md:font-normal max-md:text-[1rem]">10x</p>
+                                <p>optical zoom range</p>
+                            </div>
+                            <div class="flex justify-center items-center flex-col text-[11.2px]">
+                                <img src="img/card16.jpeg" alt="" class="mb-[15px] w-[40px] h-[40px] object-contain">
+                                <p>Emergency SOS</p>
+                                <p>Emergency SOS via satellite</p>
+                                <p>Crash Detection</p>
+                                <p>Roadside Assistance via</p>
+                                <p>satellite</p>
+                            </div>
+                            <div class="flex justify-center items-center flex-col text-[11.2px]">
+                                <img src="img/card17.jpeg" alt="" class="mb-[15px] w-[40px] h-[40px] object-contain">
+                                <p>Up to 29 hours video</p>
+                                <p>playback</p>
+                            </div>
+                            <div class="flex justify-center items-center flex-col text-[11.2px]">
+                                <img src="img/card18.jpeg" alt="" class="mb-[15px] w-[40px] h-[40px] object-contain">
+                                <p>Up to 29 hours video</p>
+                                <p>playback</p>
+                            </div>
+                            <div>
+                                <img src="img/card19.jpeg" alt="" class="mb-[15px] w-[40px] h-[40px] object-contain">
+                            </div>
+                        </div>
+                        <hr
+                            class="w-[251.1px] h-[1.6px] bg-[#999] max-md:w-[105px] my-[35px] text-center max-md:hidden">
+
+                    </div>
+                    <div id="card2" class="flex justify-center items-center flex-col gap-1 md:mr-[40px] md:ml-[40px]">
+                        <div class="flex justify-around items-center flex-col gap-12">
+                            <div class="flex justify-center items-center flex-col gap-1">
+                                <img src="img/card21.jpg" alt=""
+                                    class="w-[231px] max-md:w-[156.35px] h-[225px] object-contain">
+                                <img src="img/card22.jpeg" alt="" class="my-[15px]">
+                                <p class="text-[#FC7C7C] text-[.7rem] text-center">New</p>
+                                <p class="font-bold">Iphone 15 Pro</p>
+                                <p>The ultimate Iphone</p>
+                                <p class="py-[8px]">From $999</p>
+                                <a href=""
+                                    class="bg-[#0071e3] text-[#fff] block w-[75px] h-[37px] text-center pt-[3px] rounded-2xl buyhover">Buy</a>
+                                <p class="text-[#0071e3] font-semibold text-center text-[1.12em] my-[8px]"><a href=""
+                                        class="ahover">Learn More
+                                        ></a></p>
+                                <hr class="w-[251.1px] h-[1.6px] bg-[#999] max-md:w-[105px] my-[35px]">
+                                <div class="flex justify-center items-center flex-col gap-12">
+                                    <div class="flex justify-center items-center flex-col text-[11.2px]">
+                                        <p>6.7″ or 6.1″</p>
+                                        <p>Super Retina XDR display</p>
+                                        <p>ProMotion technology</p>
+                                        <p>Always-On display</p>
+                                    </div>
+                                    <div class="flex justify-center items-center flex-col text-[11.2px]">
+                                        <img src="img/card13.jpeg" alt=""
+                                            class="mb-[15px] w-[40px] h-[40px] object-contain">
+                                        <p>Titanium with textured matte</p>
+                                        <p>glass back</p>
+                                        <p>Action button</p>
+                                    </div>
+                                    <div class="flex justify-center items-center flex-col text-[11.2px]">
+                                        <img src="img/card14.jpeg" alt=""
+                                            class="mb-[15px] w-[40px] h-[40px] object-contain">
+                                        <p>Dynamic Island</p>
+                                        <p>A magical way to interact</p>
+                                        <p>with iPhone</p>
+                                    </div>
+                                    <div class="flex justify-center items-center flex-col text-[11.2px]">
+                                        <img src="img/card15.jpeg" alt=""
+                                            class="mb-[15px] w-[40px] h-[40px] object-contain">
+                                        <p>Pro camera system</p>
+                                        <p>48MP Main</p>
+                                        <p>Ultra Wide</p>
+                                        <p>Super-high-resolution photos</p>
+                                        <p>(24MP and 48MP)</p>
+                                        <p>Next-generation portraits</p>
+                                        <p>with Focus and Depth</p>
+                                        <p>Control</p>
+                                    </div>
+                                    <div class="flex justify-center items-center flex-col text-[11.2px]">
+                                        <p>Up to</p>
+                                        <p class=" font-bold text-[1.3rem] max-md:font-normal max-md:text-[1rem]">10x
+                                        </p>
+                                        <p>optical zoom range</p>
+                                    </div>
+                                    <div class="flex justify-center items-center flex-col text-[11.2px]">
+                                        <img src="img/card16.jpeg" alt=""
+                                            class="mb-[15px] w-[40px] h-[40px] object-contain">
+                                        <p>Emergency SOS</p>
+                                        <p>Emergency SOS via satellite</p>
+                                        <p>Crash Detection</p>
+                                        <p>Roadside Assistance via</p>
+                                        <p>satellite</p>
+                                    </div>
+                                    <div class="flex justify-center items-center flex-col text-[11.2px]">
+                                        <img src="img/card17.jpeg" alt=""
+                                            class="mb-[15px] w-[40px] h-[40px] object-contain">
+                                        <p>Up to 29 hours video</p>
+                                        <p>playback</p>
+                                    </div>
+                                    <div class="flex justify-center items-center flex-col text-[11.2px]">
+                                        <img src="img/card18.jpeg" alt=""
+                                            class="mb-[15px] w-[40px] h-[40px] object-contain">
+                                        <p>Up to 29 hours video</p>
+                                        <p>playback</p>
+                                    </div>
+                                    <div>
+                                        <img src="img/card19.jpeg" alt=""
+                                            class="mb-[15px] w-[40px] h-[40px] object-contain">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr
+                            class="w-[251.1px] h-[1.6px] bg-[#999] max-md:w-[105px] my-[35px] text-center max-md:hidden">
+                    </div>
+
+                    <div id="card3" class="flex justify-center items-center flex-col gap-1 md:ml-[40px] md:mr-[40px]">
+                        <hr class="w-[251.1px] h-[1.6px] bg-[#999] max-md:w-[105px] my-[35px] md:hidden">
+                        <img src="img/card31.jpg" alt="" class="w-[231px] max-md:w-[156.35px] h-[225px] object-contain">
+                        <img src="img/card12.jpeg" alt="" class="my-[15px]">
+                        <p class="text-[#FC7C7C] text-[.7rem] text-center">New</p>
+                        <p class="font-bold">Iphone 15 Pro</p>
+                        <p>The ultimate Iphone</p>
+                        <p class="py-[8px]">From $999</p>
+                        <a href=""
+                            class="bg-[#0071e3] buyhover text-[#fff] block w-[75px] h-[37px] text-center pt-[3px] rounded-2xl">Buy</a>
+                        <p class="text-[#0071e3]  font-semibold text-center text-[1.12em] my-[8px]"><a href=""
+                                class="ahover">Learn
+                                More
+                                ></a></p>
+                        <hr class="w-[251.1px] h-[1.6px] bg-[#999] max-md:w-[105px] my-[35px]">
+                        <div class="flex justify-center items-center flex-col gap-12">
+                            <div class="flex justify-center items-center flex-col text-[11.2px]">
+                                <p>6.7″ or 6.1″</p>
+                                <p>Super Retina XDR display</p>
+                                <p>ProMotion technology</p>
+                                <p>Always-On display</p>
+                            </div>
+                            <div class="flex justify-center items-center flex-col text-[11.2px]">
+                                <img src="img/card13.jpeg" alt="" class="mb-[15px] w-[40px] h-[40px] object-contain">
+                                <p>Titanium with textured matte</p>
+                                <p>glass back</p>
+                                <p>Action button</p>
+                            </div>
+                            <div class="flex justify-center items-center flex-col text-[11.2px]">
+                                <img src="img/card14.jpeg" alt="" class="mb-[15px] w-[40px] h-[40px] object-contain">
+                                <p>Dynamic Island</p>
+                                <p>A magical way to interact</p>
+                                <p>with iPhone</p>
+                            </div>
+                            <div class="flex justify-center items-center flex-col text-[11.2px]">
+                                <img src="img/card15.jpeg" alt="" class="mb-[15px] w-[40px] h-[40px] object-contain">
+                                <p>Pro camera system</p>
+                                <p>48MP Main</p>
+                                <p>Ultra Wide</p>
+                                <p>Super-high-resolution photos</p>
+                                <p>(24MP and 48MP)</p>
+                                <p>Next-generation portraits</p>
+                                <p>with Focus and Depth</p>
+                                <p>Control</p>
+                            </div>
+                            <div class="flex justify-center items-center flex-col text-[11.2px]">
+                                <p>Up to</p>
+                                <p class=" font-bold text-[1.3rem] max-md:font-normal max-md:text-[1rem]">10x</p>
+                                <p>optical zoom range</p>
+                            </div>
+                            <div class="flex justify-center items-center flex-col text-[11.2px]">
+                                <img src="img/card16.jpeg" alt="" class="mb-[15px] w-[40px] h-[40px] object-contain">
+                                <p>Emergency SOS</p>
+                                <p>Emergency SOS via satellite</p>
+                                <p>Crash Detection</p>
+                                <p>Roadside Assistance via</p>
+                                <p>satellite</p>
+                            </div>
+                            <div class="flex justify-center items-center flex-col text-[11.2px]">
+                                <img src="img/card17.jpeg" alt="" class="mb-[15px] w-[40px] h-[40px] object-contain">
+                                <p>Up to 29 hours video</p>
+                                <p>playback</p>
+                            </div>
+                            <div class="flex justify-center items-center flex-col text-[11.2px]">
+                                <img src="img/card18.jpeg" alt="" class="mb-[15px] w-[40px] h-[40px] object-contain">
+                                <p>Up to 29 hours video</p>
+                                <p>playback</p>
+                            </div>
+                            <div>
+                                <img src="img/card19.jpeg" alt="" class="mb-[15px] w-[40px] h-[40px] object-contain">
+                            </div>
+                        </div>
+                        <hr class="w-[251.1px] h-[1.6px] bg-[#999] max-md:w-[105px] my-[35px] text-center">
+
+                    </div>
+                    <div id="card4">
+                        <hr class="w-[251.1px] h-[1.6px] bg-[#999] max-md:w-[105px] my-[35px] md:hidden">
+                        <div class="flex justify-center items-center flex-col gap-12">
+                            <div class="flex justify-center items-center flex-col gap-1">
+                                <img src="img/card41.jpg" alt=""
+                                    class="w-[231px] max-md:w-[156.35px] h-[225px] object-contain">
+                                <img src="img/card22.jpeg" alt="" class="my-[15px]">
+                                <p class="text-[#FC7C7C] text-[.7rem] text-center">New</p>
+                                <p class="font-bold">Iphone 15 Pro</p>
+                                <p>The ultimate Iphone</p>
+                                <p class="py-[8px]">From $999</p>
+                                <a href=""
+                                    class="bg-[#0071e3] text-[#fff] block w-[75px] h-[37px] text-center pt-[3px] rounded-2xl buyhover">Buy</a>
+                                <p class="text-[#0071e3] font-semibold text-center text-[1.12em] my-[8px]"><a href=""
+                                        class="ahover">Learn More
+                                        ></a></p>
+                                <hr class="w-[251.1px] h-[1.6px] bg-[#999] max-md:w-[105px] my-[35px]">
+                                <div class="flex justify-center items-center flex-col gap-12">
+                                    <div class="flex justify-center items-center flex-col text-[11.2px]">
+                                        <p>6.7″ or 6.1″</p>
+                                        <p>Super Retina XDR display</p>
+                                        <p>ProMotion technology</p>
+                                        <p>Always-On display</p>
+                                    </div>
+                                    <div class="flex justify-center items-center flex-col text-[11.2px]">
+                                        <img src="img/card13.jpeg" alt=""
+                                            class="mb-[15px] w-[40px] h-[40px] object-contain">
+                                        <p>Titanium with textured matte</p>
+                                        <p>glass back</p>
+                                        <p>Action button</p>
+                                    </div>
+                                    <div class="flex justify-center items-center flex-col text-[11.2px]">
+                                        <img src="img/card14.jpeg" alt=""
+                                            class="mb-[15px] w-[40px] h-[40px] object-contain">
+                                        <p>Dynamic Island</p>
+                                        <p>A magical way to interact</p>
+                                        <p>with iPhone</p>
+                                    </div>
+                                    <div class="flex justify-center items-center flex-col text-[11.2px]">
+                                        <img src="img/card15.jpeg" alt=""
+                                            class="mb-[15px] w-[40px] h-[40px] object-contain">
+                                        <p>Pro camera system</p>
+                                        <p>48MP Main</p>
+                                        <p>Ultra Wide</p>
+                                        <p>Super-high-resolution photos</p>
+                                        <p>(24MP and 48MP)</p>
+                                        <p>Next-generation portraits</p>
+                                        <p>with Focus and Depth</p>
+                                        <p>Control</p>
+                                    </div>
+                                    <div class="flex justify-center items-center flex-col text-[11.2px]">
+                                        <p>Up to</p>
+                                        <p class=" font-bold text-[1.3rem] max-md:font-normal max-md:text-[1rem]">10x
+                                        </p>
+                                        <p>optical zoom range</p>
+                                    </div>
+                                    <div class="flex justify-center items-center flex-col text-[11.2px]">
+                                        <img src="img/card16.jpeg" alt=""
+                                            class="mb-[15px] w-[40px] h-[40px] object-contain">
+                                        <p>Emergency SOS</p>
+                                        <p>Emergency SOS via satellite</p>
+                                        <p>Crash Detection</p>
+                                        <p>Roadside Assistance via</p>
+                                        <p>satellite</p>
+                                    </div>
+                                    <div class="flex justify-center items-center flex-col text-[11.2px]">
+                                        <img src="img/card17.jpeg" alt=""
+                                            class="mb-[15px] w-[40px] h-[40px] object-contain">
+                                        <p>Up to 29 hours video</p>
+                                        <p>playback</p>
+                                    </div>
+                                    <div class="flex justify-center items-center flex-col text-[11.2px]">
+                                        <img src="img/card18.jpeg" alt=""
+                                            class="mb-[15px] w-[40px] h-[40px] object-contain">
+                                        <p>Up to 29 hours video</p>
+                                        <p>playback</p>
+                                    </div>
+                                    <div>
+                                        <img src="img/card19.jpeg" alt=""
+                                            class="mb-[15px] w-[40px] h-[40px] object-contain">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="w-[251.1px] h-[1.6px] bg-[#999] max-md:w-[105px] my-[35px] text-center">
+                    </div>
+                </div>
+            </div>
+            <div class="text-center flex flex-col  gap-[20px]">
+                <a class="text-[#007BFF]  cursor-pointer">Compare all iPhone models ></a>
+                <a class="text-[#007BFF]  cursor-pointer">Shop iPhone ></a>
+            </div>
+        </div>
+        <div class="bg-[#f2f2f2] w-[100%] lg:w-[100%] md:w-[100%] my-[30px] ">
+            <h2 class="max-md:text-[28px] text-center text-[44px] font-semibold py-[40px]">Ways to save on iPhone</h2>
+            <div class="flex justify-evenly my-[20px] flex-wrap w-[90%] m-auto">
+                <div>
+                    <div class="bg-[#fff] w-[344px] h-[478px] p-[10px] m-[15px] rounded-xl new">
+                        <h5 class="text-center font-bold text-[1.72rem] py-[10px]">$620 in credit when you <br> trade in
+                            iPhone 11 or <br> higher.</h5>
+                        <p class="text-[#007BFF] cursor-pointer text-center py-[10px]">See what your device is worth >
+                        </p>
+                    </div>
+                </div>
+                <div class="w-[344px] h-[478px] p-[10px] m-[15px] bg-[#fff] text-center rounded-xl  ">
+                    <h5 class="text-center font-bold text-[1.42rem]  py-[10px]">iPhone carrier deals. <br> Right here at
+                        Apple. <br> For as low as $0.9</h5>
+                    <div class="new2 "></div>
+                    <p class="text-[#0071e3] font-semibold text-center text-[1.12em] my-[8px]"><a href="" class="">Learn
+                            More
+                            ></a></p>
+                    <p class="text-[#999]">Includes trade‑in and carrier credits. AT&T: <br> up to $1000. T‑Mobile: up
+                        to
+                        $800. Verizon:
+                        <br> up to $830.
+                    </p>
+
+                </div>
+                <div>
+                    <div class="bg-[#fff] w-[344px] h-[478px] p-[10px] m-[15px] text-center rounded-xl">
+                        <h5 class="text-center font-bold text-[1.72rem] py-[10px]">Pay 0% APR over 24 <br> months with
+                            Apple <br> Card.</h5>
+                        <p class="text-[#999]">Choose Apple Card Monthly Installments <br> when you check out.</p>
+                        <a class="text-[#007BFF]  text-center py-[10px]">Learn more > </a>
+                        <div class="new3 bg-center"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[85%] m-auto">
+                <div
+                    class="bg-[#Fff] text-center m-auto mt-[15px] py-[15px] h-[580px] md:m-[15px] max-md:w-[344px] max-md:h-[478px] rounded-xl">
+                    <h2 class="text-[3rem] font-bold max-md:text-[1.72rem] font-sans py-[15px]">Why Apple is the best
+                        <br>
+                        place to buy iPhone.
+                    </h2>
+                    <p class="text-[1rem] max-md:text-[.8rem]">You can choose a paymass option that works <br
+                            class="hidden max-md:block"> for you, pay less with a <br class="block max-md:hidden">
+                        trade‑in, connect your <br class="hidden max-md:block"> new
+                        iPhone
+                        to your carrier, and get set up <br> quickly.</p>
+                    <a class="text-[#007BFF] cursor-pointer text-center py-[10px]">Learn more > </a>
+                    <div class="new4 h-[275px]  w-[80%] m-auto max-md:w-[337px] max-md:h-[228px]"></div>
+                </div>
+            </div>
+            <div>
+            </div>
+            <div class="text-center m-auto  overflow-hidden my-[15px]">
+                <h2 class="text-[2.5rem] font-bold my-[20px] max-md:text-[1.72rem] ">Featured <br> accessories</h2>
+                <div class="w-[85%]  bg-[#fff] rounded-xl  max-md:w-[344px] max-md:h-[478px] m-auto ">
+                    <div
+                        class="text-center flex justify-center  m-auto overflow-hidden items-center max-md:flex-col h-[580px] md:m-[15px] max-md:w-[344px] max-md:h-[478px] rounded-xl">
+                        <div class="w-[50%] py-[10px]">
+                            <h2 class="font-bold text-[3.4rem] py-[15px] max-md:text-[1.7rem]">MagSafe</h2>
+                            <p class="text-[1.3rem] max-lg:text-[.8rem]">Snap on a magnetic case, wallet, or <br> both.
+                                And get fast, efficient wireless <br>
+                                charging.</p>
+                            <p
+                                class="text-[#007BFF] cursor-pointer text-[1.3rem] max-lg:text-[.8rem] text-center py-[10px]">
+                                Shop MagSafe accessories > </p>
+                        </div>
+                        <div class="new5 h-[50vh] w-[50%] m-auto max-md:w-[327px]  max-md:h-[228px]">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="w-[85%]  my-[30px]  overflow-hidden bg-[#fff] rounded-md  max-md:w-[344px] max-md:h-[478px] m-auto ">
+                <div
+                    class="text-center flex justify-around overflow-hidden m-auto items-center max-md:flex-col-reverse h-[580px] md:m-[15px] max-md:w-[344px] max-md:h-[478px] rounded-xl">
+                    <div class="new6 h-[50vh] w-[50%] m-auto max-md:w-[327px] -translate-y-1 max-md:h-[228px]"></div>
+                    <div class="w-[50%] py-[10px] ">
+                        <h2 class="font-bold text-[4.4rem] py-[15px] max-md:text-[1.7rem]">AirTag</h2>
+                        <p class="text-[1.3rem] max-lg:text-[.8rem]">Attach one to your keys.</p>
+                        <p class="text-[1.3rem] max-lg:text-[.8rem]">Put another in your backpack.</p>
+                        <p class="text-[1.3rem] max-lg:text-[.8rem]">If they’re misplaced, just use the Find My app.</p>
+                        <p
+                            class="text-[#007BFF] text-[1.3rem] max-md:text-[.8rem] text-center cursor-pointer py-[10px]">
+                            Buy > Learn more > </p>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="bg-[#fff]  overflow-hidden rounded-md flex flex-col justify-around text-center w-[85%] py-[20px] m-auto max-md:w-[344px] max-md:h-[478px] ">
+                <div>
+                    <h2 class="font-bold text-[3rem] max-md:text-[1.7rem]">Magic runs in the family.</h2>
+                    <p class="py-[20px]">Explore all AirPods models and find the best ones for you.</p>
+                    <a class="text-[#007BFF] cursor-pointer" href="">Learn more ></a>
+                </div>
+                <div class="w-[80%] card102 h-[50vh] max-md:h-[180px] m-auto"></div>
+            </div>
+            <p class="text-[#007BFF] py-[20px] text-[1.7rem] text-center cursor-pointer ">Shop all iPhone accessories >
+            </p>
+            <div class="flex flex-wrap  justify-between w-[85%] m-auto items-center max-md:flex-col">
+                <div class="flex flex-col justify-center gap-2 items-center w-[310px] h-[310px]">
+                    <img src="img/diva1.png" alt="">
+                    <h4 class="font-bold">Fast, free delivery</h4>
+                    <p class="text-[.9rem]">Or pick up available items at an Apple Store</p>
+                    <p class="text-[#007BFF] cursor-pointer">Learn more ></p>
+                </div>
+                <div class=" flex flex-col justify-center gap-2 items-center w-[310px] h-[310px]">
+                    <img src="img/diva2.png" alt="">
+                    <h4 class="font-bold">Pay monthly at 0% APR</h4>
+                    <p class="text-[.9rem] text-center ">You can pay over time when you choose to <br> check out with
+                        Apple Card Monthly Installments.</p>
+                    <p class="text-[#007BFF] cursor-pointer">Learn more ></p>
+                </div>
+                <div class="flex flex-col justify-center gap-2 items-center w-[310px] h-[310px]">
+                    <img src="img/diva3.png" alt="">
+                    <h4 class="font-bold">Get help buying</h4>
+                    <p class="text-[.9rem] text-center">Have a question? Call a Specialist or chat online. <br> Call
+                        1‑800‑MY‑APPLE.</p>
+                    <a class="text-[#007BFF] cursor-pointer">Learn more ></a>
+                </div>
+            </div>
+            <div class="max-md:w-[85%] m-auto my-[40px]">
+                <h2 class="font-bold text-[3rem] max-md:text-[1.98rem] text-center">What makes an iPhone <br
+                        class="block lg:hidden"> an iPhone?</h2>
+                <div
+                    class="bg-[#fff] overflow-hidden rounded-md text-center w-[80%] m-auto lg:h-[600px]  py-[25px] my-[20px]">
+                    <h4 class="text-[2rem] font-bold max-md:font-normal py-[10px]">IOS 17</h4>
+                    <p class="">Every day. More extraordinary. Learn more</p>
+                    <p class="text-[#007BFF] py-[6px] cursor-pointer">Learn more ></p>
+                    <div class="ip1 block max-md:hidden w-[80%] h-[55vh] m-auto"></div>
+
+                </div>
+            </div>
+            <div
+                class="flex flex-wrap justify-evenly my-[50px] gap-[20px] w-[80%] m-auto items-center text-center max-md:flex-col ">
+                <div class="w-[48%] max-md:w-[80%] rounded-md py-[20px] bg-[#fff] overflow-hidden">
+                    <h2 class="text-[1.5rem] py-[10px]">Switching to iPhone is super simple.</h2>
+                    <a class="text-[#007BFF] text-[1.4rem] py-[6px] cursor-pointer">Learn more ></a>
+                    <div class="ip2 m-auto w-[98%] h-[45vh] overflow-hidden"></div>
+                </div>
+                <div class="w-[48%] m-auto bg-[#fff] rounded-md py-[20px] max-md:w-[80%] overflow-hidden">
+                    <h2 class="text-[1.8rem] py-[10px]">Privacy.That’s iPhone.</h2>
+                    <p class="text-[#007BFF] py-[6px] text-[1.4rem] cursor-pointer">Learn more ></p>
+                    <div class="ip3  w-[98%] m-auto h-[45vh] "></div>
+                </div>
+            </div>
+            <div class="text-center  w-[80%] my-[30px] m-auto">
+                <h2 class="font-bold text-[4rem] max-md:text-[2rem] py-[20px]">Get more out of your iPhone.</h2>
+                <div class="bg-[#fff] flex  justify-evenly items-center">
+                    <div class="ip4 w-[40%] h-[50vh] block max-md:hidden"></div>
+                    <div class="lg:w-[40%] py-[20px]">
+                        <div class="ip5  h-[50px]"></div>
+                        <p class="py-[20px]">Bundle up to six Apple services. And enjoy more for less.</p>
+                        <p class="text-[#007BFF] py-[6px] text-[1.4rem] cursor-pointer">Try it free ~ Learn more > </p>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="flex flex-wrap justify-evenly my-[50px] gap-[20px] w-[80%] m-auto items-center text-center max-md:flex-col ">
+                <div class="w-[48%] max-md:w-[80%] rounded-md py-[20px] bg-[#000] overflow-hidden">
+                    <h2 class=" text-[2.5rem] text-[#fff] py-[10px]"><i class="fa-brands text-[2.5rem] fa-apple"></i>
+                        tv+</h2>
+                    <h4 class=" text-[#fff] ">Get 3 months of Apple TV+ free when you buy an iPhone.</h4>
+                    <p class="text-[#007BFF] py-[6px] text-[1.4rem] cursor-pointer">Try it free ~ Learn more > </p>
+                    <div class="ip6 m-auto w-[98%] h-[45vh] overflow-hidden max-md:h-[30vh]"></div>
+                </div>
+                <div class="w-[48%] m-auto bg-[#000] rounded-md py-[20px] max-md:w-[80%] overflow-hidden">
+                    <h2 class=" text-[2.5rem] text-[#fff] py-[10px]"><i class="fa-brands text-[2.5rem] fa-apple"></i>
+                        Music</h2>
+                    <h4 class="text-[#fff]">Over 100 million songs. Start listening for free today.</h4>
+                    <p class="text-[#007BFF] py-[6px] text-[1.4rem] cursor-pointer">Try it free ~ Learn more > </p>
+                    <div class="ip7  w-[98%] m-auto h-[45vh] "></div>
+                </div>
+            </div>
+            <div
+                class="flex flex-wrap justify-evenly my-[50px] gap-[20px] w-[80%] m-auto items-center text-center max-md:flex-col ">
+                <div class="w-[48%] max-md:w-[80%] rounded-md py-[20px] bg-[#fff] overflow-hidden">
+                    <h2 class=" text-[2.5rem]  py-[10px]"><i class="fa-brands text-[2.5rem] fa-apple"></i>
+                        Fitness+</h2>
+                    <h4 class=" text-[1.6rem]">From HIIT to Meditation, there’s something for everyone</h4>
+                    <p class="text-[#007BFF] py-[6px] text-[1.4rem] cursor-pointer">Try it free ~ Learn more > </p>
+                    <div class="ip8 m-auto w-[98%] h-[45vh] overflow-hidden max-md:h-[40vh]"></div>
+                </div>
+                <div class="w-[48%] m-auto bg-[#fff] rounded-md py-[20px] max-md:w-[80%] overflow-hidden">
+                    <h2 class=" text-[2.5rem]  py-[10px]"><i class="fa-brands text-[2.5rem] fa-apple"></i>
+                        Arcade</h2>
+                    <h4 class=" text-[1.6rem]">Over 100 million songs. Start listening for free today.</h4>
+                    <p class="text-[#007BFF] py-[6px] text-[1.4rem] cursor-pointer">Try it free ~ Learn more > </p>
+                    <div class="ip9 m-auto w-[98%] h-[45vh] overflow-hidden max-md:h-[40vh]"></div>
+                </div>
+                <div class="w-[48%] max-md:w-[80%] rounded-md pt-[20px] bg-[#fff] overflow-hidden">
+                    <h2 class=" text-[2.5rem] pt-[10px]"><i class="fa-brands text-[2.5rem] fa-apple"></i>
+                        News+</h2>
+                    <h4 class=" text-[1.6rem]">From HIIT to Meditation, there’s something for everyone</h4>
+                    <p class="text-[#007BFF] py-[16px] text-[1.4rem] cursor-pointer">Try it free ~</p>
+                    <div class="ip88 m-auto w-[98%] h-[45vh] overflow-hidden max-md:h-[40vh]"></div>
+                </div>
+                <div class="w-[48%] m-auto bg-[#fff] rounded-md py-[20px] max-md:w-[80%] overflow-hidden">
+                    <h2 class=" text-[2.5rem]  py-[14px]"><i class="fa-brands text-[2.5rem] fa-apple"></i>
+                        Gift Cards</h2>
+                    <h4 class=" text-[1.6rem]">For everything and everyone.</h4>
+                    <p class="text-[#007BFF] py-[16px] text-[1.4rem] cursor-pointer">Try it free ~ Learn more > </p>
+                    <div class="ip10 m-auto w-[98%] h-[45vh] overflow-hidden max-md:h-[40vh] "></div>
+                </div>
+            </div>
+            <div class="text-center  w-[80%] my-[30px] pb-[40px] m-auto">
+                <div class="bg-[#fff] flex  justify-center items-center max-md:flex-col">
+                    <div class="lg:w-[40%] pt-[20px]">
+                        <h2 class="py-[20px] text-[2.5rem] font-semibold max-md:text-[1.61rem]">Introducing the Apple
+                            Research app.</h2>
+                        <p>The future of health research is you.</p>
+                        <p class="text-[#007BFF] py-[6px] text-[1.4rem] cursor-pointer">Try it free ~</p>
+                    </div>
+                    <div class="ip11  w-[40%] h-[50vh] max-md:w-[94%] max-md:h-[40vh] "></div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer class="my-[30px]">
+        <p class="w-[90%] m-auto text-[#999] text-[].8rem]">* Pricing for iPhone 15 and iPhone 15 Plus includes a
+            $30 connectivity discount that requires activation
+            with AT&T, T‑Mobile, or Verizon. Pricing shown for iPhone 14 and iPhone 14 Plus includes a $30
+            connectivity discount for Verizon and T‑Mobile customers that requires activation and would otherwise be
+            $30 higher for all other customers.
+
+            ** Apple Card Monthly Installments (ACMI) is a 0% APR payment option that is only available if you
+            select it at checkout in the U.S. for eligible products purchased at Apple Store locations, apple.com,
+            the Apple Store app, or by calling 1‑800‑MY‑APPLE, and is subject to credit approval and credit limit.
+            See support.apple.com/kb/ for more information about eligible products. APR ranges may vary based on
+            when you accepted an Apple Card. Cardholders who accept an Apple Card on and/or after February 1, 2024:
+            Variable APRs for Apple Card, other than ACMI, range from 19.24% to 29.49% based on creditworthiness.
+            Rates as of February 1, 2024. Existing cardholders: See your Customer Agreement for applicable rates and
+            fee. If you buy an ACMI eligible product by choosing to pay in full with Apple Card (instead of using
+            ACMI), that purchase is subject to the Apple Card variable APR, not 0% APR. Taxes and shipping on ACMI
+            purchases are subject to the variable APR, not 0% APR. When you buy an iPhone with ACMI, you’ll need to
+            select AT&T, T‑Mobile, or Verizon as your carrier when you check out. An iPhone purchased with ACMI is
+            always unlocked, so you can switch carriers at any time. ACMI is not available for purchases made online
+            at the following special stores: Apple Employee Purchase Plan; participating corporate Employee Purchase
+            Programs; Apple at Work for small businesses; Government, and Veterans and Military Purchase Programs,
+            or on refurbished devices. The last month’s payment for each product will be the product’s purchase
+            price, less all other payments at the monthly payment amount. ACMI financing is subject to change at any
+            time for any reason, including but not limited to, installment term lengths and eligible products. See
+            support.apple.com/kb/HT211204 for information about upcoming changes to ACMI financing. See the Apple
+            Card Customer Agreement for more information about ACMI financing
+
+            To access and use all Apple Card features and products available only to Apple Card users, you must add
+            Apple Card to Wallet on an iPhone or iPad that supports and has the latest version of iOS or iPadOS.
+            Apple Card is subject to credit approval, available only for qualifying applicants in the United States,
+            and issued by Goldman Sachs Bank USA, Salt Lake City Branch.</p>
+        <div class="ml-[100px] max-md:ml-[10px]">
+            <ol type="1" class="text-[#999] w-[85%] m-auto">
+                <li type="1">Trade-in values will vary based on the condition, year, and configuration of your
+                    eligible
+                    trade-in device. Not all devices are eligible for credit. You must be at least 18 years old to
+                    be eligible to trade in for credit or for an Apple Gift Card. Trade-in value may be applied
+                    toward qualifying new device purchase, or added to an Apple Gift Card. Actual value awarded is
+                    based on receipt of a qualifying device matching the description provided when estimate was
+                    made. Sales tax may be assessed on full value of a new device purchase. In-store trade-in
+                    requires presentation of a valid photo ID (local law may require saving this information). Offer
+                    may not be available in all stores, and may vary between in-store and online trade-in. Some
+                    stores may have additional requirements. Apple or its trade-in partners reserve the right to
+                    refuse or limit quantity of any trade-in transaction for any reason. More details are available
+                    from Apple’s trade-in partner for trade-in and recycling of eligible devices. Restrictions
+                    andlimitations may apply.</li>
+                <li type="1">Available to qualified customers and requires 24-month installment loan when you select
+                    Citizens One or Apple Card Monthly Installments (ACMI) as payment type at checkout at Apple.
+                    You’ll need to select AT&T, T‑Mobile, or Verizon as your carrier when you check out. An iPhone
+                    purchased with ACMI is always unlocked, so you can switch carriers at any time. Subject to
+                    credit approval and credit limit. Taxes and shipping are not included in ACMI and are subject to
+                    your card’s variable APR. Additional Apple Card Monthly Installments terms are in the Apple Card
+                    Customer Agreement. Additional iPhone Payments terms are here. ACMI is not available for
+                    purchases made online at special storefronts. The last month’s payment for each product will be
+                    the product’s purchase price, less all other payments at the monthly payment amount. ACMI
+                    financing is subject to change at any time for any reason, including but not limited to,
+                    installment term lengths and eligible products. See support.apple.com/kb/ for information about
+                    upcoming changes toACMI financing.</li>
+                <li type="1">The display has rounded corners that follow a beautiful curved design, and these
+                    corners are within a standard rectangle. When measured as a standard rectangular shape, the
+                    screen is 5.42 inches (iPhone 13 mini, iPhone 12 mini), 5.85 inches (iPhone 11 Pro, iPhone XS,
+                    iPhone X), 6.06 inches (iPhone 14, iPhone 13 Pro, iPhone 13, iPhone 12 Pro, iPhone 12, iPhone
+                    11, iPhone XR), 6.12 inches (iPhone 14 Pro, iPhone 15, iPhone 15 Pro), 6.46 inches (iPhone 11
+                    Pro Max, iPhone XS Max), 6.68 inches (iPhone 14 Plus, iPhone 13 Pro Max, iPhone 12 Pro Max), or
+                    6.69 inches (iPhone 14 Pro Max, iPhone 15 Plus, iPhone 15 Pro Max) diagonally. Actual viewable
+                    area is less.</li>
+                <li type="1">Service is included for free for two years with the activation of any iPhone 14 or
+                    iPhone 15 model. Connection and response times vary based on location, site conditions, and
+                    other factors. See support.apple.com/kb/ for more information.</li>
+                <li type="1">iPhone 14, iPhone 14 Pro, iPhone 15 and iPhone 15 Pro can detect a severe car crash and
+                    call for help. Requires a cellular connection or Wi‑Fi calling.</li>
+                <li type="1">Battery life claim refers to larger models. All battery claims depend on network
+                    configuration and many other factors; actual results will vary. Battery has limited recharge
+                    cycles and may eventually need to be replaced. Battery life and charge cycles vary by use and
+                    settings. See apple.com/batteries and apple.com/battery.html for more information.</li>
+                <li type="1">USB 3 cable with 10Gb/s speed required.</li>
+                <li type="1">All battery claims depend on network configuration and many other factors; actual
+                    results will vary. Battery has limited recharge cycles and may eventually need to be replaced.
+                    Battery life and charge cycles vary by use and settings. See apple.com/batteries and
+                    apple.com/battery.html for more information.</li>
+                <li type="1">
+                    AT&T iPhone 15 Special Deal: Monthly price reflects net monthly payment, after application of
+                    AT&T trade‑in credit applied over 36 months with purchase of an iPhone 15 Pro, iPhone 15 Pro
+                    Max, or iPhone 15 and trade‑in of eligible smartphone. Receive credit with purchase of an iPhone
+                    15 Pro or iPhone 15 Pro Max of either $1000, $700, or $350 (based upon the model and condition
+                    of your trade‑in smartphone). Receive credit with purchase of an iPhone 15 of either $700 or
+                    $350 (based upon the model and condition of your trade‑in smartphone). Max bill credits will not
+                    exceed the cost of the device. Requires upgrade of an existing line or activation of a new line
+                    and purchase of a new iPhone 15 Pro, iPhone 15 Pro Max, or iPhone 15 on qualifying 36 month 0%
+                    APR installment plan, subject to carrier credit qualification. AT&T Installment Plan with Next
+                    Up is not eligible for this promotion. $0 down for well qualified customers only, or down
+                    payment may be required and depends on a variety of factors. Tax on full retail price due at
+                    sale. Requires activation on eligible unlimited plan. If you cancel eligible wireless service,
+                    credits will stop and you will owe the remaining device balance. Activation/Upgrade Fee: $35.
+                    Trade in device may not be on existing installment plan. Bill credits are applied as a monthly
+                    credit over the 36 month installment plan. Credits start within 3 bills. Will receive catchup
+                    credits once credits start. Wireless line must be on an installment agreement, active, and in
+                    good standing for 30 days to qualify. Installment agreement starts when device is shipped. To
+                    get all credits, device must remain on agreement for entire term and you must keep eligible
+                    service on device for entire installment term. Limited time offer; subject to change. Limits:
+                    one trade‑in per qualifying purchase and one credit per line. May not be combinable with other
+                    offers, discounts, or credits. Purchase, financing, other limits, and restrictions apply. Price
+                    for iPhone 15 and iPhone 15 Plus includes $30 AT&T connectivity discount. Activation required.
+
+                    T‑Mobile iPhone 15 Special Deal: Monthly price reflects net monthly payment, after application
+                    of T‑Mobile trade‑in credit applied over 24 months with purchase of an iPhone 15 Pro, iPhone 15
+                    Pro Max, iPhone 15, or iPhone 15 Plus and trade‑in of eligible smartphone. Receive credit with
+                    purchase of an iPhone 15, iPhone 15 Plus, iPhone 15 Pro, or iPhone 15 Pro Max of $800 or $400
+                    for customers on a Go5G Plus plan (based upon the model and condition of your trade‑in
+                    smartphone); or $300 or $150 for customers on a Go5G, TMO ONE, TMO ONE Plus, Magenta, Magenta
+                    MAX, or Magenta Plus plan (based upon the model and condition of your trade‑in smartphone). Max
+                    bill credits will not exceed the cost of the device. Credit comprised of (i) Apple instant
+                    trade‑in credit at checkout and (ii) T‑Mobile monthly bill credits applied over 24 months. Allow
+                    2 bill cycles from valid submission and validation of trade‑in. Tax on pre‑credit price due at
+                    sale. Limited‑time offer; subject to change. Qualifying credit, data plan, and trade‑in in good
+                    condition required. Max 4 promotional offers on any iPhone per account. May not be combinable
+                    with some offers or discounts. Price for iPhone 15 and iPhone 15 Plus includes $30 T‑Mobile
+                    connectivity discount. Activation required. Contact T‑Mobile before cancelling service to
+                    continue remaining bill credits on current device, or credits stop & balance on required
+                    financeagreement is due
+
+                    Verizon iPhone 15 Special Deal: Monthly price reflects net monthly payment, after application of
+                    Verizon trade‑in credit applied over 36 months with purchase of an iPhone 15 Pro, iPhone 15 Pro
+                    Max, iPhone 15, or iPhone 15 Plus. Receive credit with purchase of an iPhone 15, iPhone 15 Plus,
+                    iPhone 15 Pro, or iPhone 15 Pro Max of $830 or $415 for customers on an Unlimited Ultimate, One
+                    Unlimited, or 5G Get More plan (based upon the model and condition of your trade‑in smartphone);
+                    or $415 or $200 for customers on an Unlimited Plus, 5G Do More, or 5G Play More plan (based upon
+                    the model and condition of your trade‑in smartphone). Max bill credits will not exceed the cost
+                    of the device. Must be an existing Verizon customer. Credit comprised of (i) Apple instant
+                    trade‑in credit at checkout and (ii) Verizon monthly bill credits applied over 36 months.
+                    Customer must remain in the Verizon Device Payment Program for 36 months to receive the full
+                    benefit of the Verizon bill credits. Bill credits may take 1‑2 bill cycles to appear. If it
+                    takes two cycles for bill credits to appear, you’ll see the credit for the first cycle on your
+                    second bill in addition to that month’s credit. Requires purchase and activation of a new iPhone
+                    15 Pro, iPhone 15 Pro Max, iPhone 15, or iPhone 15 Plus with the Verizon Device Payment Program
+                    at 0% APR for 36 months, subject to carrier credit qualification, and iPhone availability and
+                    limits. Taxes and shipping not included in monthly price. Sales tax may be assessed on full
+                    value of new iPhone. Requires eligible unlimited service plan. Requires trade‑in of eligible
+                    device in eligible condition. Must be at least 18 to trade‑in. Apple or its trade‑in partners
+                    reserve the right to refuse or limit any trade‑in transaction for any reason. In‑store trade‑in
+                    requires presentation of a valid, government‑issued photo ID (local law may require saving this
+                    information). In‑store promotion availability subject to local law; speak to a Specialist to
+                    learn more. Limited‑time offer; subject to change. Additional terms from Apple, Verizon, and
+                    Apple’s trade‑in partners may apply. Price for iPhone 15 and iPhone 15 Plus includes $30 Verizon
+                    connectivity discount. Activation required.
+
+                    AT&T iPhone 14 Special Deal: Buy an iPhone 14 128 GB and get $514.36 in bill credits applied
+                    over 36 months. Buy an iPhone 14 256 GB and get $434.36 in bill credits applied over 36 months.
+                    Buy an iPhone 14 512 GB and get $454.36 in bill credits applied over 36 months. Requires upgrade
+                    of an existing line (or activation of a new line) and purchase on qualifying 36‑month 0% APR
+                    installment plan, subject to carrier credit qualification. $0 down for well‑qualified customers
+                    only, or down payment may be required and depends on a variety of factors. Tax on full retail
+                    price due at sale. If you cancel eligible wireless service, credits will stop and you will owe
+                    the remaining device balance. Activation/Upgrade Fee: $35. Bill credits are applied as a monthly
+                    credit over the 36‑month installment plan. Credits start within 3 bills. Will receive catch‑up
+                    credits once credits start. Wireless line must be on an installment agreement, active, and in
+                    good standing for 30 days to qualify. Installment agreement starts when device is shipped. To
+                    get all credits, device must remain on agreement for entire term and you must keep eligible
+                    service on device for entire installment term. Limited‑time offer; subject to change. Limits:
+                    one credit per line. May not be combinable with other offers, discounts, or credits. Purchase,
+                    financing, other limits, and restrictions apply. Activation required.
+
+                    T‑Mobile iPhone 14 Special Deal: Monthly price reflects net monthly payment, after application
+                    of T‑Mobile trade‑in credit applied over 24 months with purchase of an iPhone 14 or iPhone 14
+                    Plus and trade‑in of eligible smartphone. Receive credit with purchase of an iPhone 14 or iPhone
+                    14 Plus of $800 or $400 on a Go5G Plus plan (based upon the model and condition of your trade‑in
+                    smartphone); or $300 or $150 for customers on a Go5G, TMO ONE, TMO ONE Plus, Magenta, Magenta
+                    MAX, or Magenta Plus plan (based upon the model and condition of your trade‑in smartphone). Max
+                    bill credits will not exceed the cost of the device. Credit comprised of (i) Apple connectivity
+                    trade‑in credit at checkout and (ii) T‑Mobile monthly bill credits applied over 24 months. Allow
+                    2 bill cycles from valid submission and validation of trade in. Tax on pre‑credit price due at
+                    sale. Limited‑time offer; subject to change. Qualifying credit, data plan, and trade‑in in good
+                    condition required. Max 4 promotional offers on any iPhone per account. May not be combinable
+                    with some offers or discounts. Price for iPhone 14 and iPhone 14 Plus includes $30 T‑Mobile
+                    connectivity discount. Activation required. Contact T‑Mobile before cancelling service to
+                    continue remaining bill credits on current device, or credits stop & balance on required finance
+                    agreement is due.
+                </li>
+                <li type="1">The Apple One free trial includes only services that you are not currently using
+                    through a free trial or a subscription. Plan automatically renews after trial until cancelled.
+                    Restrictions andother terms apply.</li>
+                <li type="1">New and qualified returning subscribers only. $9.99/month after free trial. Only one
+                    offer per Apple ID and only one offer per family if you’re part of a Family Sharing group,
+                    regardless of the number of devices you or your family purchases. This offer is not available if
+                    you or your Family have previously accepted an Apple TV+ three months free or one year free
+                    offer. Offer good for 3 months after eligible device activation. Plan automatically renews until
+                    cancelled. Restrictions and other terms apply</li>
+                <li type="1">New subscribers only. $10.99/month after free trial. Plan automatically renews after
+                    trial untilcancelled.</li>
+                <li type="1">Apple Fitness+ requires iPhone 8 or later or Apple Watch Series 3 or later paired with
+                    iPhone 6s or later. New subscribers only. $9.99/month after trial. Plan automatically renews
+                    untilcancelled. Terms apply.</li>
+            </ol>
+        </div>
+        <hr class="w-[80%] max-md:w-[90%] m-auto h-[1.8px] bg-[#999]  my-[15px]">
+        <div class="w-[80%] m-auto">
+            <i class="fa-brands fa-apple text-[1.3rem] px-[10px]"></i><a>iPhone ></a>
+            <div class="max-w-6xl mx-auto p-4 hidden max-md:block">
+                <!-- Menu Container -->
+                <div class="grid grid-cols-1 ">
+                    <!-- Shop and Learn Section -->
+                    <div class="rounded">
+                        <button
+                            class="w-full text-left p-4 font-semibold text-gray-700 flex justify-between items-center hover:bg-gray-100"
+                            onclick="toggleMenu('menu1')">
+                            Shop and Learn
+                            <span class="hidden max-md:block">&#x25BC;</span>
+                        </button>
+                        <ul id="menu1" class="hidden md:block pl-6 pb-4 space-y-2">
+                            <li><a href="#" class="text-gray-600 hover:text-gray-900">Store</a></li>
+                            <li><a href="#" class="text-gray-600 hover:text-gray-900">Mac</a></li>
+                            <li><a href="#" class="text-gray-600 hover:text-gray-900">iPad</a></li>
+                            <li><a href="#" class="text-gray-600 hover:text-gray-900">iPhone</a></li>
+                            <li><a href="#" class="text-gray-600 hover:text-gray-900">Watch</a></li>
+                            <li><a href="#" class="text-gray-600 hover:text-gray-900">Vision</a></li>
+                            <li><a href="#" class="text-gray-600 hover:text-gray-900">AirPods</a></li>
+                            <li><a href="#" class="text-gray-600 hover:text-gray-900">TV & Home</a></li>
+                            <li><a href="#" class="text-gray-600 hover:text-gray-900">AirTag</a></li>
+                            <li><a href="#" class="text-gray-600 hover:text-gray-900">Accessories</a></li>
+                            <li><a href="#" class="text-gray-600 hover:text-gray-900">Gift Cards</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Apple Wallet Section -->
+                    <div class="rounded">
+                        <button
+                            class="w-full text-left p-4 font-semibold text-gray-700 flex justify-between items-center hover:bg-gray-100"
+                            onclick="toggleMenu('menu3')">
+                            Apple Wallet
+                            <span class="hidden max-md:block">&#x25BC;</span>
+                        </button>
+                        <ul id="menu3" class="hidden md:block pl-6 pb-4 space-y-2">
+                            <li><a href="#" class="text-gray-600 hover:text-gray-900"> Wallet </a></li>
+                            <li><a href="#" class="text-gray-600 hover:text-gray-900"> Apple Card </a></li>
+                            <li><a href="#" class="text-gray-600 hover:text-gray-900"> Apple Pay </a></li>
+                            <li><a href="#" class="text-gray-600 hover:text-gray-900"> Apple Cash </a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Account Section -->
+                    <div class="rounded">
+                        <button
+                            class="w-full text-left p-4 font-semibold text-gray-700 flex justify-between items-center hover:bg-gray-100"
+                            onclick="toggleMenu('menu2')">
+                            Account
+                            <span class="hidden max-md:block">&#x25BC;</span>
+                        </button>
+                        <ul id="menu2" class="hidden md:block pl-6 pb-4 space-y-2">
+                            <li><a href="#" class="text-gray-600 hover:text-gray-900">Manage Your Apple ID</a></li>
+                            <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple Store Account</a></li>
+                            <li><a href="#" class="text-gray-600 hover:text-gray-900">iCloud.com</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Entertainment Section -->
+                    <div class="rounded">
+                        <button
+                            class="w-full text-left p-4 font-semibold text-gray-700 flex justify-between items-center hover:bg-gray-100"
+                            onclick="toggleMenu('menu5')">
+                            Entertainment
+                            <span class="hidden max-md:block">&#x25BC;</span>
+                        </button>
+                        <ul id="menu5" class="hidden md:block pl-6 pb-4 space-y-2">
+                            <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple One</a></li>
+                            <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple TV+</a></li>
+                            <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple Music</a></li>
+                            <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple Arcade</a></li>
+                            <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple Fitness +</a></li>
+                            <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple Podcasts</a></li>
+                            <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple Books</a></li>
+                            <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple Store</a></li>
+                        </ul>
+                    </div>
+                    <!-- App Store -->
+                    <div class="rounded">
+                        <button
+                            class="w-full text-left p-4 font-semibold text-gray-700 flex justify-between items-center hover:bg-gray-100"
+                            onclick="toggleMenu('menu10')">
+                            App Store
+                            <span class="hidden max-md:block">&#x25BC;</span>
+                        </button>
+                        <ul id="menu10" class="hidden md:block pl-6 pb-4 space-y-2">
+                            <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple One</a></li>
+                            <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple TV+</a></li>
+                            <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple Music</a></li>
+                            <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple Arcade</a></li>
+                            <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple Fitness +</a></li>
+                            <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple Podcasts</a></li>
+                            <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple Books</a></li>
+                            <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple Store</a></li>
+                        </ul>
+                    </div>
+                    <!-- For Business Section -->
+                    <div class="rounded">
+                        <button
+                            class="w-full text-left p-4 font-semibold text-gray-700 flex justify-between items-center hover:bg-gray-100"
+                            onclick="toggleMenu('menu6')">
+                            For Business
+                            <span class="hidden max-md:block">&#x25BC;</span>
+                        </button>
+                        <ul id="menu6" class="hidden md:block pl-6 pb-4 space-y-2">
+                            <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple and Business</a></li>
+                            <li><a href="#" class="text-gray-600 hover:text-gray-900">Shop for Business</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- For Education Section -->
+                    <div class="rounded">
+                        <button
+                            class="w-full text-left p-4 font-semibold text-gray-700 flex justify-between items-center hover:bg-gray-100"
+                            onclick="toggleMenu('menu7')">
+                            For Education
+                            <span class="hidden max-md:block">&#x25BC;</span>
+                        </button>
+                        <ul id="menu7" class="hidden md:block pl-6 pb-4 space-y-2">
+                            <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple and Education</a></li>
+                            <li><a href="#" class="text-gray-600 hover:text-gray-900">Shop for K-12</a></li>
+                            <li><a href="#" class="text-gray-600 hover:text-gray-900">Shop for College</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- For Healthcare Section -->
+                    <div class="rounded">
+                        <button
+                            class="w-full text-left p-4 font-semibold text-gray-700 flex justify-between items-center hover:bg-gray-100"
+                            onclick="toggleMenu('menu8')">
+                            For Healthcare
+                            <span class="hidden max-md:block">&#x25BC;</span>
+                        </button>
+                        <ul id="menu8" class="hidden md:block pl-6 pb-4 space-y-2">
+                            <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple in Healthcare</a></li>
+                            <li><a href="#" class="text-gray-600 hover:text-gray-900">Health on Apple Watch</a></li>
+                            <li><a href="#" class="text-gray-600 hover:text-gray-900">Health Records on iPhone</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- For Government Section -->
+                    <div class="rounded">
+                        <button
+                            class="w-full text-left p-4 font-semibold text-gray-700 flex justify-between items-center hover:bg-gray-100"
+                            onclick="toggleMenu('menu9')">
+                            For Government
+                            <span class="hidden max-md:block">&#x25BC;</span>
+                        </button>
+                        <ul id="menu9" class="hidden md:block pl-6 pb-4 space-y-2">
+                            <li><a href="#" class="text-gray-600 hover:text-gray-900">Shop for Government</a></li>
+                            <li><a href="#" class="text-gray-600 hover:text-gray-900">Shop for Veterans and
+                                    Military</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- App Values Section -->
+                <div class="rounded">
+                    <button
+                        class="w-full text-left p-4 font-semibold text-gray-700 flex justify-between items-center hover:bg-gray-100"
+                        onclick="toggleMenu('menu4')">
+                        App Values
+                        <span class="hidden max-md:block">&#x25BC;</span>
+                    </button>
+                    <ul id="menu4" class="hidden md:block pl-6 pb-4 space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple One</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple TV+</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple Music</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple Arcade</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple Fitness +</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple Podcasts</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple Books</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple Store</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="w-[80%] flex items-start flex-wrap justify-between m-auto  max-md:hidden">
+            <div class="flex flex-col gap-[20px] my-[20px]">
+                <h6 class="font-semibold"><a href="">Shop and Learn</a></h6>
+                <ul>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">Store</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">Mac</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">iPad</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">iPhone</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">Watch</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">Vision</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">AirPods</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">TV & Home</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">AirTag</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">Accessories</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">Gift Cards</a></li>
+                </ul>
+                <h6 class="font-semibold">Apple Wallet</h6>
+                <ul>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900"> Wallet </a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900"> Apple Card </a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900"> Apple Pay </a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900"> Apple Cash </a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="flex flex-col gap-[20px] my-[20px]">
+                <h6 class="font-semibold">Account</h6>
+                <ul>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">Manage Your Apple ID</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple Store Account</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">iCloud.com</a></li>
+                </ul>
+                <h6 class="font-semibold">Entertainment</h6>
+                <ul>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple One</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple TV+</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple Music</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple Arcade</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple Fitness +</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple Podcasts</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple Books</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple Store</a></li>
+                </ul>
+            </div>
+            <div class="flex flex-col gap-[20px] my-[20px]">
+                <h6 class="font-semibold">Apple Store</h6>
+                <ul>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple One</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple TV+</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple Music</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple Arcade</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple Fitness +</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple Podcasts</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple Books</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple Store</a></li>
+                </ul>
+            </div>
+            <div class="flex flex-col gap-[20px] my-[20px]">
+                <h6 class="font-semibold">For Business</h6>
+                <ul>
+                    <li>Apple and Businness</li>
+                    <li>Shop for Business</li>
+                </ul>
+                <h6 class="font-semibold">For Education</h6>
+                <ul>
+                    <li>Apple and education</li>
+                    <li>Shop for K-12</li>
+                    <li>Shop for Collage</li>
+                </ul>
+                <h6 class="font-semibold">For Healthcare</h6>
+                <ul>
+                    <li>Apple in Healtycare</li>
+                    <li>Health on Apple Watch</li>
+                    <li>Health Records on Iphone</li>
+                </ul>
+                <h6 class="font-semibold">For Government</h6>
+                <ul>
+                    <li>Shop For Government</li>
+                    <li>Shop for Veterans and Military</li>
+                </ul>
+            </div>
+            <div class="flex flex-col gap-[20px] my-[20px]">
+                <h6 class="font-semibold">App Values</h6>
+                <ul>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple One</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple TV+</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple Music</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple Arcade</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple Fitness +</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple Podcasts</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple Books</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple Store</a></li>
+                </ul>
+                <h6 class="font-semibold">App Values</h6>
+                <ul>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple One</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple TV+</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple Music</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple Arcade</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple Fitness +</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple Podcasts</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple Books</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">Apple Store</a></li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="w-[80%] m-auto my-[20px]">
+            <p class="text-[.9rem] font-thin">More ways to shop: <a href="" class="text-[#007BFF] underline">Find an
+                    Apple Store </a>or <a href="" class="text-[#007BFF] underline">other retailer</a> near you. Or call
+                1-800-MY-APPLE.</p>
+        </div>
+        <hr class="w-[80%] max-md:w-[90%] m-auto h-[1.8px] bg-[#999]  my-[15px]">
+        <div class="flex justify-between w-[80%] m-auto gap-[20px] text-[.8rem] max-md:flex-col">
+            <p>United States</p>
+            <p>Copyright © 2024 Apple Inc. All rights reserved.</p>
+            <p>Privacy Policy | Terms of Use | Sales and Refunds | Legal | Site Map</p>
+        </div>
+    </footer>
+
+
+
+
+    <script>
+        var toggleOpen = document.getElementById('toggleOpen');
+        var toggleClose = document.getElementById('toggleClose');
+        var collapseMenu = document.getElementById('collapseMenu');
+
+        function handleClick() {
+            if (collapseMenu.style.display === 'block') {
+                collapseMenu.style.display = 'none';
+            } else {
+                collapseMenu.style.display = 'block';
+            }
+        }
+        toggleOpen.addEventListener('click', handleClick);
+        toggleClose.addEventListener('click', handleClick);
+        function toggleMenu(menuId) {
+            const menu = document.getElementById(menuId);
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+
+</html>
